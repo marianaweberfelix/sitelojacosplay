@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1>Bem-vindo a Felix Store</h1>
+        <form>
+            <input type="search" placeholder="Busque no site">
+            <button type="submit">Pesquisar</button>
+        </form>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Cosplays
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Cosplays Completos</a>
+                        </li>
+                        <li>
+                            <a href="#">Cosplays de Jogos</a>
+                        </li>
+                        <li>
+                            <a href="#">Cosplays de Anime</a>
+                        </li>
+                    </ul>                    
+                </li>
+                <li>
+                    Perucas
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Perucas por cor</a>
+                        </li>
+                        <li>
+                            <a href="#">Perucas de Animes</a>
+                        </li>
+                        <li>
+                            <a href="#">Perucas de Jogos</a>
+                        </li>
+                    </ul>         
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <h2>Sobre a loja</h2>
+                <article class="noticia">
+                    <a>
+                        <img src="https://ae01.alicdn.com/kf/Sb8e6c5887873413b8363b78cd5292aedg/Traje-Cosplay-Firefly-para-Mulheres-Vestido-de-Festa-Carnaval-de-Halloween-Jogo-de-Anime-Quadrado-Roupa.jpeg"/>
+                        <h3>Bem-vindo à Felix Store! Somos apaixonados por cosplay e dedicados a trazer à vida os seus personagens favoritos de animes, mangás e jogos. Oferecemos uma seleção de trajes de alta qualidade, acessórios exclusivos e opções de personalização para garantir que você se destaque em qualquer evento.</h3>
+                    </a>
+                </article>                
+            </section>
+            <section>
+                <h2>Cosplays a venda</h2>
+                <div class="noticias">
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://acdn.mitiendanube.com/stores/001/752/612/products/s3b10ce6ac4d74b1f8e9b80bf9c5d741fw-jpg_-1abc17c38f5d3fc3c717142662507956-1024-1024.webp"/>
+                            <h3>SPYXFAMILY</h3>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </a>
+                    </article>                
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://m.media-amazon.com/images/I/71T8NUbq-GS.jpg"/>
+                            <h3>Genshin Impact</h3>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </a>
+                    </article>                
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://down-br.img.susercontent.com/file/bdbb74f6c49aab2eefd921d859d865d1"/>
+                            <h3>VOCALOID</h3>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </a>
+                    </article>                
+                    <article class="noticia">
+                        <a href="#">
+                            <img src="https://cossky.com/cdn/shop/products/5_871ba2a3-11e0-4795-b460-af2a5072c575_800x.jpg?v=1639129224"/>
+                            <h3>LEAGUE OF LEGENDS</h3>
+                            <button class="add-to-cart">Adicionar ao Carrinho</button>
+                        </a>
+                    </article>
+                </div>                                
+            </section>
+        </main>
+        <aside>
+            <section class="novidades">
+                <h2>Novidades no site!</h2>
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://ae-pic-a1.aliexpress-media.com/kf/S67a39a7ccdd54d34b716d5077d17ac719.jpg_640x640Q90.jpg_.webp"/>
+                        <h3>🎉 Novo Cosplay à Venda! 🎉</h3>
+                    </a>
+                </article>                
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://media.istockphoto.com/id/1470987836/pt/foto/portrait-of-a-beautiful-young-woman-game-cosplay-with-samurai-dress-costume-on-japanese-garden.jpg?s=612x612&w=0&k=20&c=DX5VVnZRfZ5hajqgaIvpm3KFtgbI6GX5YJVouGLBYiI="/>
+                        <h3>🎉 Novo Cosplay à Venda! 🎉</h3>
+                    </a>
+                </article>                
+                <article class="noticia">
+                    <a href="#">
+                        <img src="https://ae01.alicdn.com/kf/S6fd9634a88fb4c95a7708b95a7145c6fU/Halloween-feminino-tribunal-medieval-europeu-vestido-longo-cosplay-traje-elegante-bruxa-gola-quadrada-masquerade-usar-azul.jpg"/>
+                        <h3>🎉 Novo Cosplay à Venda! 🎉</h3>
+                    </a>
+                </article>                
+            </section>
+        </aside>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>   
+    <script>
+        $(document).ready(function() {
+           $('.botao-menu button').click(function() {
+            $('.menu').slideToggle();
+           }) 
+        })
+    </script>
+</body>
+</html>
